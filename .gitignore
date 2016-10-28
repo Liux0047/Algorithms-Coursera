@@ -92,3 +92,6 @@ ENV/
 # IDEA
 .idea
 *.iml
+
+# ignore data file
+*/data
