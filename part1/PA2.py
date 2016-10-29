@@ -35,11 +35,12 @@ def merge(a, start, mid, end):
             a[k:end + 1] = left[i:]
             break
 
+
 # read input
 with open("data/IntegerArray.txt") as f:
-    input = [int(x) for x in f.readlines()]
+    in_data = [int(x) for x in f.readlines()]
 inversions = 0
-merge_sort(input, 0, len(input) - 1)
+merge_sort(in_data, 0, len(in_data) - 1)
 print(inversions)
 
-#answer: 2407905288
+# answer: 2407905288
