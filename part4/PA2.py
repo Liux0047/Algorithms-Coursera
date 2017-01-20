@@ -19,7 +19,7 @@ def gen_perm(s, len, perms, size_left):
 
 
 # read input
-with open("data/tsp-test.txt") as f:
+with open("data/tsp.txt") as f:
     data = [tuple(map(float, line.strip("\n").split())) for line in f.readlines()[1:]]
 size = len(data)
 
@@ -54,3 +54,4 @@ for j in range(1, size):
         min_total = result
 
 print(min_total)
+# answer: 26442
