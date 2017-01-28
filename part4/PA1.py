@@ -2,7 +2,7 @@ import array
 import sys
 
 # read input
-with open("g3.txt") as f:
+with open("data/g3.txt") as f:
     data = [tuple(map(int, x.split())) for x in f.readlines()]
     vertex_count, edge_count = data[0]
     del data[0]
